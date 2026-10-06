@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>NovaVision.Performance</AssemblyName>
+    <RootNamespace>NovaVision.Performance</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="RuntimeOptimizer.cs" Condition="Exists('RuntimeOptimizer.cs')" />
+    <Compile Include="InteractionOptimizer.cs" Condition="Exists('InteractionOptimizer.cs')" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+# 常用桥接依赖：按本机已安装版本记录，CUDA 构建需单独选择。
+torch==2.7.1
+torchvision==0.22.1
+ultralytics==8.4.152
+numpy==2.1.2
+opencv-python==4.11.0.86
+Pillow==11.0.0
+PyYAML==6.0.2
+scipy==1.15.3
+matplotlib==3.10.3
+pandas==2.3.0
+requests==2.32.4
+tqdm==4.67.1
+psutil==7.0.0
+onnx==1.16.0
+onnxruntime==1.22.0
+fastapi==0.115.12
+uvicorn==0.34.3
+python-multipart==0.0.20

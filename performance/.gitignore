@@ -1,0 +1,8 @@
+toolchain/
+obj/
+bin/
+build/
+fixtures/
+staging/
+backups/
+release/

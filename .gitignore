@@ -1,0 +1,66 @@
+# 本地 Python 运行环境
+/DLLs/
+/include/
+/Lib/
+/libs/
+/Scripts/
+/share/
+/tcl/
+/python*.exe
+/python*.dll
+/vcruntime*.dll
+/LICENSE.txt
+/NEWS.txt
+/Arial*.ttf
+
+# 本地应用仅保留桥接源码与一份 YOLOv5 兼容源码
+/App_NovaVision/*
+!/App_NovaVision/ViTooAI_Bridge/
+!/App_NovaVision/yolov5/
+# 父项目忽略了 models/；此处属于 YOLOv5 源码，必须保留
+!/App_NovaVision/yolov5/models/
+!/App_NovaVision/yolov5/models/**
+/yolov5/
+
+# 重复 PDF 手册，仓库保留根目录 Markdown 手册
+/*.pdf
+
+# 训练产物与本机临时文件
+/runs/
+/weights/
+/scratch/
+/.vs/
+/.venv/
+/github-upload/
+/github-upload.zip
+/portable-release/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.log
+*.bak
+*.original
+*.pt
+*.onnx
+*.rknn
+*.engine
+*.cache
+.env
+.env.*
+!.env.example
+*.lic
+Thumbs.db
+.DS_Store
+
+# 性能工程的工具链、构建产物及本机运行报告
+/performance/toolchain/
+/performance/bin/
+/performance/obj/
+/performance/build/
+/performance/fixtures/
+/performance/staging/
+/performance/backups/
+/performance/release/
+/performance/reports/
+/performance/inspect.json
